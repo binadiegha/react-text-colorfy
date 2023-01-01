@@ -45,8 +45,10 @@ const Paragraph = styled.div `
 const Text = (props) => {
     const types = ['heading', 'H', 'S', 'P', 'subHeading', 'paragraph'];
     const { element, content, size, color, gradient } = props;
-    if ((typeof gradient !== "object") || (!gradient.to && !gradient.colors))
-        throw new Error('Expected Object with "to" property with type of "String" and "colors" with type of array');
+    if (gradient !== undefined) {
+        if ((typeof gradient !== "object") || (!gradient.to && !gradient.colors))
+            throw new Error('Expected Object with "to" property with type of "String" and "colors" with type of array');
+    }
     if (!types.includes(element))
         throw new Error(`type name of ${element} is invalid, please use one of the following : [${types.map(item => item)}]`);
     if (gradient && color)
