@@ -34,11 +34,22 @@ Now you can use the ***react-text-colorfy*** `Text` component in your applicatio
   ...
 />
 ```
-### Props usage
+## 📚 Documentation
 This section outlines the usage of the accepted props
 
-#### color
-The `color` prop accepts any CSS color value or name passed as a `string`: HEX, rgb, color name, etc are all accepted. see the <a href="https://www.w3schools.com/css/css3_colors.asp" target="_alt" >CSS color reference </a>  for more insight on css colors.
+### content
+The `content` prop accept the text to be passed into the component. it accepts a string with the text intended to be colored enclosed in tripple angle bracket ( `<<<` )
+
+*Code example*
+```javascript
+<Text 
+  content='this is <<< Colored >>> and this is <<< Colored too >>>. Hurray!'
+  ...
+/>
+```
+
+### color
+The `color` prop accepts any CSS color value or name passed as a `string`: HEX, rgb, color name, etc are all accepted. see the <a href="https://www.w3schools.com/css/css3_colors.asp" target="_alt" >CSS color reference </a>  for more insight on css colors. defaults to the project's primary color.
 
 *Code example*
 ```javascript
@@ -48,7 +59,7 @@ The `color` prop accepts any CSS color value or name passed as a `string`: HEX, 
   />
 ```
 
-#### gradient
+### gradient
 The gradient `prop` accepts an `object` with two `required` properties. `to` and `colors`.
 The `to` key takes any CSS gradient Direction or angle property. See the <a href="https://www.w3schools.com/css/css3_gradients.asp" target="_blank"> CSS gradient reference </a> for more insight.
 The second required property with the `key` of `colors` takes in an `array` of gradient colors as it's value.
@@ -64,3 +75,44 @@ const myGradient = {
     ...
   />
 ```
+
+### size
+The size `prop` takes in any CSS font-size property. see the <a href="https://www.w3schools.com/cssref/pr_font_font-size.php" target="_blank" >CSS font-size reference</> here. it defaults to the default font size.
+
+*Code example*
+```javascript
+  <Text 
+    size="20px"
+  />
+```
+  
+### element
+The element `prop` takes a `string`. This string determines the tag that holds the string. It can be a heading, sub-heading or a paragraph tag.
+
+**Prop values and meaning**
+| Prop name |   HTML tag  |   
+|:---       |:---         |
+|heading &#124; H | `<h1>` |
+|subHeading &#124; S | `<h2>` |
+|paragraph &#124; P | `<p>` |
+  
+  
+  
+
+## 📥 Contributing 
+When making a contribution to this repository, kindly open an issue to first explain the change you want to make. This could be a bug report or a feature request. You are welcome to work with a maintainer to create a pull request after they have prioritized your problem. You are welcome to concurrently open an issue and pull request if your modification is straightforward or small.
+
+Please be aware that we have a code of conduct, and that you must abide by it at all times when dealing with the project.
+
+### Running react-text-colorfy locally
+the project have already be setup to run locally, We use Storybook to run locally.
+After pulling the project, Run:
+  ```
+  npm install
+  ```
+  
+  Then, Run
+  
+  ```
+  npm run storybook
+  ```
