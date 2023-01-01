@@ -37,8 +37,12 @@ Now you can use the ***react-text-colorfy*** `Text` component in your applicatio
 ## 📚 Documentation
 This section outlines the usage of the accepted props
 
+
 ### content
 The `content` prop accept the text to be passed into the component. it accepts a string with the text intended to be colored enclosed in tripple angle bracket ( `<<<` )
+
+#### syntax
+the major syntax to note is the `<<<` and `>>>` syntax. text enclosed in the triple-angle-brackets are the target text that change in color.
 
 *Code example*
 ```javascript
@@ -49,7 +53,7 @@ The `content` prop accept the text to be passed into the component. it accepts a
 ```
 
 ### color
-The `color` prop accepts any CSS color value or name passed as a `string`: HEX, rgb, color name, etc are all accepted. see the <a href="https://www.w3schools.com/css/css3_colors.asp" target="_alt" >CSS color reference </a>  for more insight on css colors. defaults to the project's primary color.
+The `color` prop accepts any CSS color value or name passed as a `string`: HEX, rgb, color name, etc are all accepted. see the <a href="https://www.w3schools.com/css/css3_colors.asp" target="_blank"> CSS color reference </a>  for more insight on css colors. defaults to the project's primary color.
 
 *Code example*
 ```javascript
@@ -77,7 +81,7 @@ const myGradient = {
 ```
 
 ### size
-The size `prop` takes in any CSS font-size property. see the <a href="https://www.w3schools.com/cssref/pr_font_font-size.php" target="_blank" >CSS font-size reference</> here. it defaults to the default font size.
+The size `prop` takes in any CSS font-size property. see the <a href="https://www.w3schools.com/cssref/pr_font_font-size.php" target="_blank" >CSS font-size reference</a> here. it defaults to the default font size.
 
 *Code example*
 ```javascript
