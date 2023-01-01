@@ -1,6 +1,6 @@
 {
   "name": "react-text-colorfy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple react package that help set varrying text color in a react text component",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
