@@ -1,10 +1,11 @@
 {
   "name": "react-text-colorfy",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple react package that help set varrying text color in a react text component",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
-  "github": "https://github.com/binadiegha/react-text-colorfy",
+  "repository": "https://github.com/binadiegha/react-text-colorfy",
+  "homepage": "https://github.com/binadiegha/react-text-colorfy#readme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
