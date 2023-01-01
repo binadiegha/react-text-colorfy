@@ -119,4 +119,4 @@ After pulling the project, Run:
   
   
   ## 📝 Licence
-  MIT © Jones B gabriel  ·  GitHub @Binadiegha / Jones B Gabriel
+  MIT © Jones B gabriel  ·  GitHub <a href="https://github.com/binadiegha" >@Binadiegha / Jones B Gabriel</a>
