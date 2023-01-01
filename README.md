@@ -116,3 +116,7 @@ After pulling the project, Run:
   ```
   npm run storybook
   ```
+  
+  
+  ## 📝 Licence
+  MIT © Jones B gabriel  ·  GitHub @Binadiegha / Jones B Gabriel
