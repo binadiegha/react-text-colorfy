@@ -2,8 +2,10 @@
 
 # React-text-colorfy
 
+A simple and easy to use react component that helps you add gradient or color to text in your react project.
+
 ## 🔍 Overview
-It has come to our notice that adding color or gradient to seclected text to string of sentences during development is a process most developers would like to shorten. it requires a lot of css code. especially when the colors in different areas of your app is different. 
+It has come to our notice that adding color or gradient to selected text to string of sentences during development is a process most developers would like to shorten. it requires a lot of css code. especially when the colors in different areas of your app is different. 
 this is why I came up with ***react-text-colorfy*** a simple component based solution that allows devs create headings and other text components / tags.
 
 ## 🛠️ Installation
