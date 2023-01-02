@@ -5,8 +5,8 @@
 A simple and easy to use react component that helps you add gradient or color to text in your react project.
 
 ## 🔍 Overview
-It has come to our notice that adding color or gradient to selected text to string of sentences during development is a process most developers would like to shorten. it requires a lot of css code. especially when the colors in different areas of your app is different. 
-this is why I came up with ***react-text-colorfy*** a simple component based solution that allows devs create headings and other text components / tags.
+We have observed that most developers would like to speed up the process of applying color or a gradient to specific text or a string of sentences during development. There is a lot of CSS code needed. especially if your app's colors vary between distinct locations.
+This is why I created ***react-text-colorfy***, a straightforward component-based solution that enables developers to add colors or gradients to headings and other text components / tags.
 
 ## 🛠️ Installation
 Adding ***react-text-colorfy*** to your project requires just a few lines of code. tho, it is not worthy that this library have a few dev dependencies: react and styled-components.
@@ -32,10 +32,15 @@ Now you can use the ***react-text-colorfy*** `Text` component in your applicatio
 ```javascript
 <Text 
   element="heading"
-  color="rgb(0,255,0)"
+  color="rgb(64, 227, 212)"
   ...
 />
 ```
+##### *Result*
+<img width="100%" alt="image" src="https://user-images.githubusercontent.com/19647826/210222702-0b70b42c-949f-438d-b9fa-59ec7b668fd3.png">
+
+
+
 ## 📚 Documentation
 This section outlines the usage of the accepted props
 
@@ -60,10 +65,14 @@ The `color` prop accepts any CSS color value or name passed as a `string`: HEX, 
 *Code example*
 ```javascript
   <Text 
-    color="rgb(0,255,0)"
+    color="orange"
     ...
   />
 ```
+
+##### *Result*
+<img width="100%" alt="image" src="https://user-images.githubusercontent.com/19647826/210222834-d41a5f04-ac91-40de-8e18-0b16aa3cfa4d.png">
+
 
 ### gradient
 The gradient `prop` accepts an `object` with two `required` properties. `to` and `colors`.
@@ -74,13 +83,17 @@ The second required property with the `key` of `colors` takes in an `array` of g
 ```javascript
 const myGradient = {
   to: 'bottom left',
-  colors: ['yellow', 'rgb(0,255,0)', '#45af5b']
+  colors: ['rgb(64, 227, 212)', 'red', '#45af5b']
  }
   <Text 
     gradient={myGradient}
     ...
   />
 ```
+
+##### *Result*
+<img width="100%" alt="image" src="https://user-images.githubusercontent.com/19647826/210223038-894d0adc-0aed-4810-841f-97818006f0b3.png">
+
 
 ### size
 The size `prop` takes in any CSS font-size property. see the <a href="https://www.w3schools.com/cssref/pr_font_font-size.php" target="_blank" >CSS font-size reference</a> here. it defaults to the default font size.
@@ -91,6 +104,8 @@ The size `prop` takes in any CSS font-size property. see the <a href="https://ww
     size="20px"
   />
 ```
+<img width="100%" alt="image" src="https://user-images.githubusercontent.com/19647826/210223160-27f343b5-93c9-44cf-b18e-7c4a231cdd87.png">
+
   
 ### element
 The element `prop` takes a `string`. This string determines the tag that holds the string. It can be a heading, sub-heading or a paragraph tag.
@@ -102,7 +117,33 @@ The element `prop` takes a `string`. This string determines the tag that holds t
 |subHeading &#124; S | `<h2>` |
 |paragraph &#124; P | `<p>` |
   
-  
+*HeadingCode example*
+```javascript
+  <Text 
+    element="heading"
+  />
+```
+##### *Heading result*
+<img width="100%" alt="image" src="https://user-images.githubusercontent.com/19647826/210223288-794fdafa-478d-41b8-82d1-53858521dbb3.png">
+
+*Subheading Code example*
+```javascript
+  <Text 
+    element="subHeading"
+  />
+```
+##### *Subheading result*
+<img width="100%" alt="image" src="https://user-images.githubusercontent.com/19647826/210223430-caf88047-2b23-43ef-a018-127f1451ec90.png">
+
+*Paragraph Code example*
+```javascript
+  <Text 
+    element="paragraph"
+  />
+```
+##### *Paragraph result*
+<img width="100%" alt="image" src="https://user-images.githubusercontent.com/19647826/210223541-a2bda68b-809f-4eb8-b724-1fc4b1bcdaa3.png">
+
   
 
 ## 📥 Contributing 
